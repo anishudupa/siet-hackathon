@@ -7,7 +7,10 @@ const TransporterSchema = mongoose.Schema(
         vechicleType: String,
         phoneNo: Number,
         addr: String,
-        ratings: Number,
+        ratings: {
+            type: Number,
+            default: 0,
+        },
     },
     { timestamps: true }
 )
