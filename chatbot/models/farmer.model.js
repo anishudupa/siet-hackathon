@@ -2,6 +2,7 @@ import mongoose from "mongoose"
 
 const FarmerSchema = new mongoose.Schema(
     {
+        username: String,
         email: {
             type: String,
             required: false,
